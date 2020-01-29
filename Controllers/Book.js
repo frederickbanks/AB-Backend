@@ -11,8 +11,8 @@ module.exports = {
       res.json(results);
     });
   },
-  // return book title based on search
 
+  // return book title based on search
   findByTitle: (req, res) => {
     book.findOne({ "data.VolumeInfo.books.title": title }).then(results => {
       res.json(results);
